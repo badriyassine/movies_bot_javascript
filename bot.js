@@ -32,7 +32,7 @@ async function getLatestMovies() {
 // Restrict bot commands to the allowed channel
 async function checkChannel(message) {
   if (message.channel.id !== ALLOWED_CHANNEL_ID) {
-    message.channel.send("🚫 This bot only works in the designated channel!");
+    message.channel.send(" This bot only works in the designated channel!");
     return false;
   }
   return true;
